@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<!--
+* CoreUI - Free Bootstrap Admin Template
+* @version v5.1.1
+* @link https://coreui.io/product/free-bootstrap-admin-template/
+* Copyright (c) 2024 creativeLabs Łukasz Holeczek
+* Licensed under MIT (https://github.com/coreui/coreui-free-bootstrap-admin-template/blob/main/LICENSE)
+-->
+
+<html lang="en">
+  <head>
+    <base href="./">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
+    <meta name="author" content="Łukasz Holeczek">
+    <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
+    <title>CoreUI Free Bootstrap Admin Template</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Vendors styles-->
+    <link rel="stylesheet" href="node_modules/simplebar/dist/simplebar.css">
+    <link rel="stylesheet" href="css/vendors/simplebar.css">
+    <!-- Main styles for this application-->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- We use those styles to show code examples, you should remove them in your application.-->
+    <link href="css/examples.css" rel="stylesheet">
+    <script src="js/config.js"></script>
+    <script src="js/color-modes.js"></script>
+    <link href="node_modules/@coreui/chartjs/dist/css/coreui-chartjs.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="sidebar sidebar-dark sidebar-fixed border-end" id="sidebar">
+      <div class="sidebar-header border-bottom">
+        <div class="sidebar-brand .d-flex justify-content-center">
+          <img src="../assets/img/logo.png" alt="Logo" width="50" >
+          <svg class="sidebar-brand-narrow" width="32" height="32" alt="Logo">
+            <use xlink:href="assets/img/logo.png"></use>
+          </svg>
+        </div>
+        <button class="btn-close d-lg-none" type="button" data-coreui-dismiss="offcanvas" data-coreui-theme="dark" aria-label="Close" onclick="coreui.Sidebar.getInstance(document.querySelector(&quot;#sidebar&quot;)).toggle()"></button>
+      </div>
+      <ul class="sidebar-nav" data-coreui="navigation" data-simplebar>
+         <li class="nav-item"><a class="nav-link" href="accueil.html">
+            <svg class="nav-icon">
+              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-home"></use>
+            </svg> Accueil<span class="badge badge-sm bg-info ms-auto">NEW</span></a></li>
+        <li class="nav-title">Informations</li>
+
+        <li class="nav-item"><a class="nav-link" href="actualites.html">
+          <svg class="nav-icon">
+            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-newspaper"></use>
+          </svg> Actualités</a></li>
+        <li class="nav-item"><a class="nav-link" href="calendrier.html">
+          <svg class="nav-icon">
+            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-calendar"></use>
+          </svg> Calendrier</a></li>
+
+        <li class="nav-title">Ressources</li>
+
+        <li class="nav-item"><a class="nav-link" href="baseclients.html">
+          <svg class="nav-icon">
+            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-people"></use>
+          </svg> Base Clients</a></li>
+        <li class="nav-item"><a class="nav-link" href="baseannonces.html">
+          <svg class="nav-icon">
+            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-notes"></use>
+          </svg> Base Annonces</a></li>
+
+        <li class="nav-title">Communication</li>
+        <li class="nav-item"><a class="nav-link" href="chatappels.html">
+          <svg class="nav-icon">
+            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-chat-bubble"></use>
+          </svg> Chats et Appels<span class="badge badge-sm bg-info ms-auto">NEW</span></a></li>
+
+        <li class="nav-item"><a class="nav-link" href="centrecontact.html">
+          <svg class="nav-icon">
+            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-contact"></use>
+          </svg> Centre de Contact</a></li>
+
+          <li class="nav-title">Commercial</li>
+
+          <li class="nav-item"><a class="nav-link" href="mesventes.html">
+            <svg class="nav-icon">
+              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-wallet"></use>
+            </svg> Mes Ventes</a></li>
+  
+                </li>
+                <li class="nav-item"><a class="nav-link" href="analytique.html">
+            <svg class="nav-icon">
+              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-graph"></use>
+            </svg> Analytique</a></li>
+
+        </li>
+     
+        <li class="nav-divider"></li>
+        
+      <div class="sidebar-footer border-top d-none d-md-flex">     
+        <button class="sidebar-toggler" type="button" data-coreui-toggle="unfoldable"></button>
+      </div>
+    </div>
+    <div class="wrapper d-flex flex-column min-vh-100">
+      <header class="header header-sticky p-0 mb-4">
+        <div class="container-fluid border-bottom px-4">
+          <button class="header-toggler" type="button" onclick="coreui.Sidebar.getInstance(document.querySelector('#sidebar')).toggle()" style="margin-inline-start: -14px;">
+            <svg class="icon icon-lg">
+              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-menu"></use>
+            </svg>
+          </button>
+
+          <ul class="header-nav">
+            <li class="nav-item py-1">
+              <div class="vr h-100 mx-2 text-body text-opacity-75"></div>
+            </li>
+            <li class="nav-item dropdown">
+              <button class="btn btn-link nav-link py-2 px-2 d-flex align-items-center" type="button" aria-expanded="false" data-coreui-toggle="dropdown">
+                <svg class="icon icon-lg theme-icon-active">
+                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-contrast"></use>
+                </svg>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end" style="--cui-dropdown-min-width: 8rem;">
+                <li>
+                  <button class="dropdown-item d-flex align-items-center" type="button" data-coreui-theme-value="light">
+                    <svg class="icon icon-lg me-3">
+                      <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-sun"></use>
+                    </svg>Light
+                  </button>
+                </li>
+                <li>
+                  <button class="dropdown-item d-flex align-items-center" type="button" data-coreui-theme-value="dark">
+                    <svg class="icon icon-lg me-3">
+                      <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-moon"></use>
+                    </svg>Dark
+                  </button>
+                </li>
+                <li>
+                  <button class="dropdown-item d-flex align-items-center active" type="button" data-coreui-theme-value="auto">
+                    <svg class="icon icon-lg me-3">
+                      <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-contrast"></use>
+                    </svg>Auto
+                  </button>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item py-1">
+              <div class="vr h-100 mx-2 text-body text-opacity-75"></div>
+            </li>
+            <li class="nav-item dropdown"><a class="nav-link py-0 pe-0" data-coreui-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                <div class="avatar avatar-md"><img class="avatar-img" src="assets/img/avatars/8.jpg" alt="user@email.com"></div></a>
+              <div class="dropdown-menu dropdown-menu-end pt-0">
+                <div class="dropdown-header bg-body-tertiary text-body-secondary fw-semibold rounded-top mb-2">Mon Compte</div><a class="dropdown-item" href="#">
+                  <svg class="icon me-2">
+                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bell"></use>
+                  </svg> Notifications<span class="badge badge-sm bg-info ms-2">42</span></a><a class="dropdown-item" href="#">
+                  <svg class="icon me-2">
+                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-envelope-open"></use>
+                  </svg> Chat<span class="badge badge-sm bg-success ms-2">42</span></a><a class="dropdown-item" href="#">
+                  <svg class="icon me-2">
+                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-task"></use>
+                  </svg> Calendrier<span class="badge badge-sm bg-danger ms-2">42</span></a><a class="dropdown-item" href="#">
+                  <svg class="icon me-2">
+                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-comment-square"></use>
+                  </svg> Mes Ventes<span class="badge badge-sm bg-warning ms-2">42</span></a>
+                <div class="dropdown-header bg-body-tertiary text-body-secondary fw-semibold my-2">
+                  <div class="fw-semibold">Paramètres</div>
+                </div><a class="dropdown-item" href="#">
+                  <svg class="icon me-2">
+                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-user"></use>
+                  </svg> Profil</a><a class="dropdown-item" href="register.html">
+                  <svg class="icon me-2">
+                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-account-logout"></use>
+                  </svg> Se Déconnecter</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="container-fluid px-4">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb my-0">
+              <li class="breadcrumb-item"><a href="accueil.html">Accueil</a>
+              </li>
+              <li class="breadcrumb-item active"><span>Ressources / Base Clients</span>
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </header>
+      <div class="body flex-grow-1">
+        <!-- En-tête de la page -->
+        <div class="text-center mb-4">
+          <h1 class="display-2">Base Clients</h1>
+          <p class="lead" style="color: darkgrey;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+      </div>
+        <div class="container-lg mt-5">
+
+            <!-- Formulaire de recherche et de filtres -->
+            <form class="mb-4">
+                <div class="row g-3 align-items-end">
+                    <!-- Recherche par nom ou entreprise -->
+                    <div class="col-md-4">
+                        <label for="searchName" class="form-label">Nom/Entreprise</label>
+                        <input type="text" class="form-control" id="searchName" placeholder="Rechercher...">
+                    </div>
+
+                    <!-- Filtre par genre/entité -->
+                    <div class="col-md-4">
+                        <label for="filterEntity" class="form-label">Genre/Entité</label>
+                        <select class="form-select" id="filterEntity">
+                            <option value="" selected>Tous</option>
+                            <option value="Individu">Individu</option>
+                            <option value="Entreprise">Entreprise</option>
+                        </select>
+                    </div>
+
+                    <!-- Filtre par statut -->
+                    <div class="col-md-4">
+                        <label for="filterStatus" class="form-label">Statut</label>
+                        <select class="form-select" id="filterStatus">
+                            <option value="" selected>Tous</option>
+                            <option value="Actif">Actif</option>
+                            <option value="Inactif">Inactif</option>
+                            <option value="En Attente">En Attente</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="d-flex justify-content-end mt-3">
+                    <button type="submit" class="btn btn-primary">Rechercher</button>
+                </div>
+            </form>
+
+            <!-- Tableau de clients -->
+            <div class="table-responsive-lg ">
+                <table class="table table-striped table-hover table-bordered align-middle">
+                    <thead class="table-dark">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Genre/Entité</th>
+                            <th scope="col">Nom/Prénom ou Entreprise</th>
+                            <th scope="col">Adresse Email</th>
+                            <th scope="col">Téléphone</th>
+                            <th scope="col">Date d'Inscription</th>
+                            <th scope="col">Statut</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Ligne de données exemple 1 -->
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Individu</td>
+                            <td>Jean Dupont</td>
+                            <td>jean.dupont@example.com</td>
+                            <td>+33 6 12 34 56 78</td>
+                            <td>2023-01-15</td>
+                            <td><span class="badge bg-success">Actif</span></td>
+                        </tr>
+                        <!-- Ligne de données exemple 2 -->
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Entreprise</td>
+                            <td>Société XYZ</td>
+                            <td>contact@outlook.com</td>
+                            <td>+33 1 23 45 67 89</td>
+                            <td>2023-02-10</td>
+                            <td><span class="badge bg-secondary">Inactif</span></td>
+                        </tr>
+                        <!-- Ligne de données exemple 3 -->
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Individu</td>
+                            <td>Marie Curie</td>
+                            <td>marie.curie@laspote.net</td>
+                            <td>+33 6 98 76 54 32</td>
+                            <td>2023-03-05</td>
+                            <td><span class="badge bg-success">Actif</span></td>
+                        </tr>
+                        <!-- Ligne de données exemple 4 -->
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Entreprise</td>
+                            <td>Alpha Services</td>
+                            <td>info@alphaservices.com</td>
+                            <td>+33 1 55 55 55 55</td>
+                            <td>2023-04-20</td>
+                            <td><span class="badge bg-warning text-dark">En Attente</span></td>
+                        </tr>
+                        <!-- Ligne de données exemple 5 -->
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Individu</td>
+                            <td>Paul Martin</td>
+                            <td>paul.martin@wahoo.fr</td>
+                            <td>+33 6 33 44 55 66</td>
+                            <td>2023-05-10</td>
+                            <td><span class="badge bg-success">Actif</span></td>
+                        </tr>
+                        <!-- Ligne de données exemple 6 -->
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Entreprise</td>
+                            <td>Material.net</td>
+                            <td>materialnet@network.net</td>
+                            <td>+33 5 78 52 10 58</td>
+                            <td>2022-12-29</td>
+                            <td><span class="badge bg-success">Actif</span></td>
+                        </tr>
+                        <!-- Ligne de données exemple 7 -->
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>Individu</td>
+                            <td>Lutherking Martin</td>
+                            <td>lutherking.martin@gmail.com</td>
+                            <td>+33 6 33 44 55 66</td>
+                            <td>1960-05-10</td>
+                            <td><span class="badge bg-secondary">Inactif</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+      <footer class="footer px-4 mt-auto">
+        <div><a href="https://coreui.io">CoreUI </a><a href="https://coreui.io/product/free-bootstrap-admin-template/">Bootstrap Admin Template</a> &copy; 2024 creativeLabs.</div>
+        <div class="ms-auto">Powered by&nbsp;<a href="https://coreui.io/docs/">CoreUI UI Components</a></div>
+      </footer>
+    </div>  
+    <!-- CoreUI and necessary plugins-->
+    <script src="node_modules/@coreui/coreui/dist/js/coreui.bundle.min.js"></script>
+    <script src="node_modules/simplebar/dist/simplebar.min.js"></script>
+    <script>
+      const header = document.querySelector('header.header');
+      
+      document.addEventListener('scroll', () => {
+        if (header) {
+          header.classList.toggle('shadow-sm', document.documentElement.scrollTop > 0);
+        }
+      });
+      
+    </script>
+    <!-- Plugins and scripts required by this view-->
+    <script src="node_modules/chart.js/dist/chart.umd.js"></script>
+    <script src="node_modules/@coreui/chartjs/dist/js/coreui-chartjs.js"></script>
+    <script src="node_modules/@coreui/utils/dist/umd/index.js"></script>
+    <script src="js/main.js"></script>
+    <script> 
+    </script>
+  </body>
+</html>
